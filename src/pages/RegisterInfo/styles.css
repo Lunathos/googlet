@@ -1,0 +1,127 @@
+.reginfo-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+}
+
+.reginfo-container .content {
+    width: 100%;
+    max-width: 750px;
+    max-height: 720px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 52px;
+    padding-right: 64px;
+
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.reginfo-container .content .google-header {
+    margin-top: -64px;
+    margin-bottom: 40px;
+}
+
+
+.reginfo-container .content section {
+    width: 100%;
+    max-width: 380px;
+    margin-top: 8px;
+    margin-left: 48px;
+}
+
+.reginfo-container .content section p {
+    text-align: center;
+}
+
+.reginfo-container .content .input-optI-group input,
+.reginfo-container .content .input-optII-group input
+{
+    width: 375px;
+    height: 36px;
+    margin-top: 16px;
+}
+
+.reginfo-container .content .input-optI-group input{
+    width: 300px;
+    height: 36px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+
+.reginfo-container .content .input-optI-group select{
+    width: 40px;
+    height: 15px;
+    
+    margin-left: 12px;
+    
+    border: none;
+    background-image: url('../../assets/flag-brazil.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+
+.reginfo-container .content .input-optI-group p,
+.reginfo-container .content .input-optII-group p,
+.reginfo-container .content .birthday-group p
+{
+    font: 300 13px Roboto;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+.reginfo-container .content .input-optII-group input{
+    width: 365px;
+    height: 36px;
+    margin-top: 24px;
+    margin-bottom: 4px;
+}
+
+.reginfo-container .content .birthday-group input,
+.reginfo-container .content .birthday-group select
+{
+    width: 110px;
+    height: 34px;
+}
+
+
+.reginfo-container .content .birthday-group select,
+.reginfo-container .content .select-genero-group select {
+    border: 1px solid #dcdce6;
+    border-radius: 4px;
+    font: 400 16px Roboto, sans-serif;
+    
+}
+
+.reginfo-container .content .birthday-group select {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.reginfo-container .content .select-genero-group select {
+    width: 100%;
+    height: 34px;
+    
+    margin-bottom: 50px;
+}
+
+.reginfo-container .content form h4{
+    margin-bottom: 50px;
+}
+
+.reginfo-container .content form button{
+    margin-left: 117px;
+}

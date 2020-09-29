@@ -1,0 +1,113 @@
+.register-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FFFFFF;
+}
+
+.register-container .content {
+    width: 100%;
+    max-width: 750px;
+    max-height: 538px;
+
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 52px;
+    padding-right: 64px;
+
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.register-container .content form img {
+    margin-bottom: 14px;
+}
+
+
+.register-container .content form h1 {
+    margin-bottom: 15px;
+}
+
+.register-container .content form h3 {
+    margin-bottom: 25px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.register-container .content .google-header {
+    margin-top: -64px;
+    margin-bottom: 40px;
+}
+
+.register-container .content section {
+    width: 100%;
+    max-width: 380px;
+    margin-top: 64px;
+    margin-left: 48px;
+}
+
+.register-container .content section p{
+    text-align: center;
+}
+
+.register-container .content form {
+    width: 100%;
+    max-width: 550px;
+}
+.register-container .content form input{
+    margin-top: 10px;
+}
+
+.register-container .content .input-name-group input{
+    width: 175px;
+    height: 36px;
+    margin-right: 12px;
+}
+
+.register-container .content .input-email-group{
+    width: 375px;
+}
+
+.register-container .content .input-email-group input{
+    width: 362px;
+    height: 36px;
+    margin-bottom: 10px;
+}
+
+
+.register-container .content .input-email-group p{
+    font: 300 13px Roboto;
+}
+
+.register-container .content .input-password-group input{
+    width: 175px;
+    height: 36px;
+    margin: 48px 12px 8px 0px;
+}
+
+
+.register-container .content .input-password-group p{
+    font: 300 13px Roboto;
+    margin-bottom: 24px;
+}
+
+.register-container .content .input-password-group button{
+    border: none;
+    background: none;
+}
+
+a {
+    margin-right: 102px;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.css';
 
@@ -7,7 +8,6 @@ import logoImg from '../../assets/logo.svg';
 export default function Login() {
 
     return (
-        
         <div className="login-container">
             <div className="form-container">
                 <section className="form">
@@ -22,10 +22,9 @@ export default function Login() {
                         <p>Não está no seu computador? Use o modo visitante para
                         <br/> fazer login com privacidade. <a href="/learnmore">Saiba mais</a></p>                    
                         
-                        <a href="/signup">Criar Conta</a>
+                        <Link to="/register">Criar Conta</Link>
                         <button className="button" type="submit">Próxima</button>
 
-                        
                     </form>
                 </section>
             </div>
