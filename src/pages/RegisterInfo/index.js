@@ -8,11 +8,16 @@ import logoImg from '../../assets/logo.svg';
 import infoShield from '../../assets/num-shield.svg';
 
 export default function RegisterInfo(){
-
+    // const[phone, setPhone] = useState('');
+    // const[email2, setEmail2] = useState('');
+    // const[day, setDay] = useState('');
+    // const[month, setMonth] = useState('');
+    // const[year, setYear] = useState('');
+    
     const history = useHistory();
 
     function hanldeGo(){
-        history.push('/final');
+        history.push('/gmail');
     }
 
     return (
