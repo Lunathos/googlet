@@ -27,7 +27,7 @@ export default function Register() {
             password,        
         };
 
-        console.log(data);        
+        // console.log(data);        
         history.push("/registerinfo");
         /*
         try {         

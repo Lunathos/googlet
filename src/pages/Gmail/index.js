@@ -1,13 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {
     FaInbox, FaStar, FaClock,
     FaPaperPlane, FaStickyNote, FaExclamationCircle,
-    FaTrash, FaSearch
+    FaTrash, FaSearch, FaQuestionCircle, FaCog, FaTh
 } from 'react-icons/fa';
 
 import SideNav, {
-    Toggle, Nav,
     NavItem, NavIcon, NavText
 } from '@trendmicro/react-sidenav';
 
@@ -15,10 +14,25 @@ import './react-sidenav.css';
 
 
 import logoImg from '../../assets/gmail.png';
+import plusImg from '../../assets/plus-gmail.png';
 import './styles.css';
 
 
+// function Hide() {
+//     return (
+//         <div>
+//             <Gmail />
+//         </div>
+//     )
+// }
+
 export default function Gmail(){
+
+    const [disp, setDisp] = useState(false);
+
+    // function handleAlert() {
+    //     alert('Escreva seu e-mail!');
+    // }
 
     return(
         <div className="gmail-container">
@@ -27,16 +41,30 @@ export default function Gmail(){
                 <h1>Gmail</h1>
 
                 <div className="google-search">
-                    
-                <div className="search-icon">
-                        <FaSearch size={16} color='#dcdce6'/>
+                    <div className="search-icon">
+                            <FaSearch size={16} color='#dcdce6'/>    
+                    </div>
+                    <form>
+                        <input
+                            placeholder="Pesquisar e-mail">
+                        </input>
+                    </form>
                 </div>
-                <form>
-                    <input
-                        placeholder="Pesquisar e-mail">
-                    </input>
-                </form>
+
+                <div className="icon-group">
+                    <button className="q-bts-icon">
+                        <FaQuestionCircle size={16}/>
+                    </button>
+
+                    <button className="c-bts-icon">
+                        <FaCog size={16}/>
+                    </button>
+
+                    <button className="t-bts-icon">
+                        <FaTh size={16}/>
+                    </button>
                 </div>
+
                 <div className="google-left-navbar">
 
                     <SideNav
@@ -47,7 +75,24 @@ export default function Gmail(){
                         <SideNav.Toggle/>
 
                         <SideNav.Nav defaultSelected="inbox">
-                        
+
+                            <NavItem eventKey="write">
+                                <NavIcon>
+                                    <button 
+                                        type="button"
+                                        className="bts-write-mail"
+                                        onClick={() => {
+                                            setDisp(!disp);
+                                        }}
+                                    >
+
+                                        <img src={plusImg} alt="Escrever"/>
+                                    </button>
+                                </NavIcon>
+                                    <NavText>Escrever</NavText>
+                            </NavItem>
+
+
                             <NavItem eventKey="inbox">
                                 <NavIcon>
                                     <FaInbox size={17.5}/>
@@ -107,15 +152,48 @@ export default function Gmail(){
             </div>
 
             <div className="gmail-body">
+
                 <div className="gmail-body-header">
                     <p>Oi</p>
                     <p>Hwat</p>
                 </div>
                 
                 <div className="gmail-body-container">
-                <p>Hello World</p>
+                    <div className="gmail-content">
+                        <ul>
+                            <li>
+                                <button className="bts-star-mail" onClick={() => {}} type="button">
+                                    <FaStar size={17.5}/>
+                                </button>
+
+                                <button class="bts-mail">
+                                    <strong className="title-mail">TeT cursos</strong>
+                            
+                                    <strong className="desc-mail">Gmail simulador</strong>
+
+                                    <strong className="date-mail">23 set</strong>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>    
+
+            
                 </div>
-                
+
+                <form>
+                        {disp &&
+                        <div className="escrever-mail-box" style={{ display: disp}}>
+                            <div className="escrever-header">
+                                <h2>Nova mensagem</h2>
+                            </div>
+                            <form>
+                                <input placeholder="Destinatários" type="text"/>
+                                <input placeholder="Assunto" type="text"/> 
+                                <textarea></textarea>      
+                            </form>
+                        </div>}
+                    </form>    
+
             </div>
         </div>
     );
