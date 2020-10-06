@@ -1,0 +1,137 @@
+.logout-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.l-form-container {
+    width: 100%;
+    height: 100%;
+
+    max-width: 450px;
+    max-height: 450px;
+
+    padding: 0 10px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #e2e8f3;
+}
+
+ .logout-container .form-image {
+     margin-top: 10px;
+     
+     color: #404040;
+ }
+
+ 
+ 
+ .logout-container .l-form-container .form-image {
+    margin-bottom: 45px;
+ }
+
+
+.name-account {
+    width: 100%;
+
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+}
+
+.name-account p {
+    font: 400 24px Roboto, sans-serif;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.user-account {
+    width: 100%;
+    margin-top: 3px;
+    margin-left: 5px;
+    display: inline-flex;
+ }
+
+.user-account-email {
+    width: 100%;
+    max-width: 240px;
+    margin-left: 15px;
+
+    align-self: center;
+
+    justify-content: space-between;
+
+    display: inline-flex;
+    font: 400 14px Roboto, sans-serif;
+}
+ .user-account-bts{
+    width: 300px;
+    height: 34px;
+    margin-left: 70px; 
+    
+    border: 1px solid #b6b7b9;
+    border-radius: 20px;
+    background: #ffffff;
+ }
+
+ .logout-container section {
+    margin-top: 30px;
+ }
+ 
+ .logout-container section.form input {
+     width: 100%;
+     max-width: 385px;
+     margin-left: 25px;
+ }
+
+ .logout-container .form-header {
+     align-items: center;
+     text-align: center;
+ }
+ 
+ .logout-container .form-header img {
+    margin-top: 25px; 
+    width: 85px;
+ }
+ 
+ 
+ .logout-container section.form form h4 a{
+     font-family: Roboto;
+     font-weight: 500;
+     color: #1A73E8;
+   
+ }
+ 
+.l-form-footer {
+    width: 100%;
+    max-width: 385px;
+
+
+    margin-top: 30px;
+    margin-left: 25px;
+    justify-content: space-between;
+    display: inline-flex;
+ }
+
+.l-form-footer h4{
+    align-self: center;
+ }
+
+.l-form-footer button {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
+ a:link, a:visited {
+     font: 700 14px Archivo;
+     color: #1A73E8;
+     text-decoration: none;
+ }

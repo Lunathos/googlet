@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link, useHistory} from 'react-router-dom';
 
 import {FaRegUserCircle} from 'react-icons/fa'
 import {FiSquare} from 'react-icons/fi';
@@ -9,6 +9,13 @@ import './styles.css';
 import logoImg from '../../assets/logo.svg';
 
 export default function ServiceLogin() {
+
+    const history = useHistory();
+
+    function goToGmail(e) {
+        e.preventDefault();
+        history.push('/gmail');
+    }
 
     return (
         <div className="service-container">
@@ -32,7 +39,7 @@ export default function ServiceLogin() {
                         </div>
                     </div>
 
-                    <form>
+                    <form onSubmit={goToGmail}>
 
                         <input placeholder="Senha"/>
                         <button className="button" type="submit">Fazer Login</button>

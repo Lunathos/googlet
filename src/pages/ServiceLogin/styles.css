@@ -20,6 +20,7 @@
 .service-container .form-image .user-image {
     padding: 5px 175px;
     margin-top: 25px;
+    color: #404040;
 }
 
 .service-container .form-image .user-info {
@@ -31,6 +32,7 @@
 
 .service-container .form-image .user-info strong {
     padding-left: 35px;
+    
     font: 700 20px Roboto, sans-serif;
 }
 
