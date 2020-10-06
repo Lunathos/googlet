@@ -1,0 +1,139 @@
+.service-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.service-container section {
+   border: 1px solid #e2e8f3;
+   border-radius: 8px;
+}
+
+
+.service-container .form-image .user-image {
+    padding: 5px 175px;
+    margin-top: 25px;
+}
+
+.service-container .form-image .user-info {
+    padding-left: 145px;
+    width: 100%;
+    width: 500px;
+}
+
+
+.service-container .form-image .user-info strong {
+    padding-left: 35px;
+    font: 700 20px Roboto, sans-serif;
+}
+
+
+.service-container .form-image {
+    margin-bottom: 25px;
+}
+
+.service-container section.form {
+    width: 100%;
+    height: 350px;
+    max-width: 450px;
+}
+
+.service-container section.form input {
+    width: 100%;
+    max-width: 320px;
+    margin-left: 65px;
+}
+
+.service-container section.form form {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 15px;
+    
+}
+
+.service-container section.form button {
+    width: 100%;
+    max-width: 320px;
+    margin-left: 65px;
+}
+
+.service-container section.form .form-footer button {
+    width: 10px;
+    margin: initial;
+    border: none;
+    background: none;
+
+}
+
+.service-container .form-header {
+    align-items: center;
+    text-align: center;
+}
+
+.service-container .form-header img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.service-container .form-header h1 {
+    margin-bottom: 15px;
+    font: 300 36px Roboto, sans-serif;
+}
+
+.service-container .form-header h3 {
+    margin-bottom: 25px;
+    font: 300 20px Roboto, sans-serif;
+}
+
+.service-container .form-footer {
+    width: 100%;
+    margin-left: 55px;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+
+
+.service-container section.form form h4 a{
+    font-family: Roboto;
+    font-weight: 500;
+    color: #1A73E8;
+}
+
+
+.service-container section.form form p {
+    font: 500 14px Roboto, sans-serif;
+}
+
+.service-container section.form form p a {
+    font: 400 14px Roboto Medium, sans-serif;
+    color: #1A73E8;
+}
+
+
+.service-container section.form form button {
+    margin-bottom: 10px;
+}
+
+a:link, a:visited {
+    font: 700 14px Archivo;
+    color: #1A73E8;
+    text-decoration: none;
+}
+
+.s-form-footer {
+    width: 100%;
+    max-width: 450px;
+
+    margin-top: 35px;
+    margin-left: 55px;
+    text-align: center;
+    height: 20px;
+}

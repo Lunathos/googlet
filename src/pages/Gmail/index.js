@@ -245,8 +245,7 @@ export default function Gmail(){
                                         <input type="file"  />
                                     </div>
                                     </div>
-                                    </>
-                                    
+                                    </>    
                                 }
                                 
                                 
