@@ -53,6 +53,7 @@ export default function Gmail(){
     function handleSumbit(event) {
         alert('E-mail enviado');
         setDisp(!disp);
+        setAnex(!anex);
         event.preventDefault();
     }
 
@@ -189,34 +190,39 @@ export default function Gmail(){
                         <FaCaretDown size={17.5}/>
                     </button>
                     
-                    <div className="gmail-b-header"/>
+                    
                     <button className="bts-redo">
                             <FaRedo size={17.5}/>
-                        </button>
+                    </button>
 
-                        <button className="bts-grid">
-                            <FaEllipsisV size={17.5}/>
-                        </button>
+                    <button className="bts-grid">
+                        <FaEllipsisV size={17.5}/>
+                    </button>
+                    <div className="gmail-b-header"/>
 
                 </div>
                 
                 <div className="gmail-body-container">
                     <div className="gmail-content">
-                        <ul>
-                            <li>
-                                <button className="bts-star-mail" onClick={() => {}} type="button">
-                                    <FaStar size={17.5}/>
-                                </button>
 
-                                <button className="bts-mail">
-                                    <strong className="title-mail">TeT cursos</strong>
-                            
-                                    <strong className="desc-mail">Gmail simulador</strong>
+                                <div className="email-content">
+                                    <button className="bts-select-mail">
+                                        <FiSquare size={17.5}/>
+                                    </button>
+                                    <button className="bts-star-mail" onClick={() => {}} type="button">
+                                        <FaStar size={17.5}/>
+                                    </button>
+                                
+                                
+                                    <button className="bts-mail">
+                                        <strong className="title-mail">Modelo de Currículo</strong>
+                                
+                                        <strong className="desc-mail">Gmail simulador</strong>
 
-                                    <strong className="date-mail">23 set</strong>
-                                </button>
-                            </li>
-                        </ul>
+                                        <strong className="date-mail">23 set</strong>
+                                    </button>
+                                </div>
+
                     </div>    
 
             

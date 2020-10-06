@@ -133,8 +133,8 @@
 
 }
 
-.bts-redo {
-    margin-right: 10px;
+.bts-grid, .bts-redo {
+    margin-left: 35px;
 }
 
 
@@ -155,9 +155,9 @@
     background: none;
 }
 
-.gmail-body-container ul{
+/* .gmail-body-container ul{
     list-style: none;
-}
+} */
 
 .gmail-body-container button,
 .bts-group-footer button{
@@ -169,39 +169,59 @@
     color: rgb(190, 190, 190);
 }
 
-.gmail-content {
+
+.gmail-content .email-content {
     height: 33px;
     border-bottom: 1px solid #dcdce6;
 }
 
+.gmail-content .email-content .bts-mail {
+    top: 5px;
+    position: absolute;
+}
+
 .gmail-body-container .bts-mail {
     width: 100%;
-    max-width: 450px;
 
+    max-width: 450px;
+    
     background: #fff;
     justify-self: space-between;
     position: relative;
+    display: inline-flex;
 }
 
 strong {
     font: 300 14px Roboto, sans-serif;
+    text-align: left;
 }
 
-.gmail-body-container .bts-mail .title-mail{
+.gmail-body-container .bts-mail .title-mail, .desc-mail, .date-mail {
+    width: 100%;
+    max-width: 130px;
+    
+    margin-left: 20px;
+
+    display: inline-flex;
+    position: relative;
+}
+
+.title-mail {
     font: 700 14px Roboto, sans-serif;
     text-transform: capitalize;
-    margin-right: 60px;
-
 }
 
-.gmail-body-container .bts-mail .desc-mail{
-    margin-right: 20px;
-    padding-right: 80px;
+.date-mail {
+    margin-left: 15px;
+    padding-left: 85px;
 }
 
-.gmail-body-container .bts-mail .date-mail{
-    padding-left: 60px;
+/* .gmail-body-container .bts-mail {
+    
 }
+
+.gmail-body-container .bts-mail {
+     */
 
 .escrever-mail-box {
     width: 480px;
@@ -291,9 +311,16 @@ strong {
     color: #404040;
 }
 
+.bts-select, .bts-redo, .bts-grid, .bts-select-mail,
 .bts-clip, .bts-link, .bts-smile,.bts-drive,
 .bts-image,.bts-lock, .bts-pen, .bts-eli, .bts-trash {
     color: #979696;
+}
+
+.bts-select-mail, .bts-star-mail {
+    margin-top: 5px;
+    margin-right: 15px;
+    display: inline-flex;
 }
 
 
