@@ -11,6 +11,11 @@ export default function Logout() {
 
     const history = useHistory();
 
+    function goToRemove() {
+        history.push("/logout/RemoveAccount");
+    }
+
+
     return (
         <div className="logout-container">
                 <div className="l-form-container">
@@ -24,7 +29,7 @@ export default function Logout() {
                                     <p>TET ALUNO</p>
                                 </div>
 
-                            <button className="user-account-bts">
+                            <button className="user-account-bts" onClick={goToRemove}>
                                 <div className="user-account">
                                     <FaRegUserCircle size={26} />
                                     <div className="user-account-email">
@@ -36,7 +41,7 @@ export default function Logout() {
                         </div>
 
                         <form>
-                            <input placeholder="Senha"/>
+                            <input placeholder="Senha" type="password" required/>
                             <div className="l-form-footer">
                                 <h4><a href="/">Esqueceu sua senha?</a></h4>
                                 <button className="button" type="submit">Próxima</button>

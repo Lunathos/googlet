@@ -61,15 +61,15 @@
 
 .user-account-email {
     width: 100%;
-    max-width: 240px;
-    margin-left: 15px;
+    max-width: 230px;
+    margin-left: 20px;
 
     align-self: center;
 
     justify-content: space-between;
 
     display: inline-flex;
-    font: 400 14px Roboto, sans-serif;
+    font: 400 16px Roboto, sans-serif;
 }
  .user-account-bts{
     width: 300px;

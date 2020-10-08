@@ -1,0 +1,60 @@
+.desconect-email{
+    margin-top: 10px;
+    height: 12px;
+    margin-right: 2px;
+}
+
+.desconect-email button {
+    color:  #b40606;
+    border: none;
+    background: none;
+}
+
+.footer .concluido-bts{
+    font: 500 16px Roboto, sans-serif;
+    color: #1A73E8;
+    justify-content: left;
+    align-content: left;
+    text-align: left;
+}
+
+
+.r-bts-option {
+    width: 350px;
+    margin-left: 30px;
+
+}
+
+.r-bts-option .other-email,
+.r-bts-option .remove-email {
+
+    font: 500 14px Roboto, sans-serif;
+    color: #777;    
+    
+    justify-content: left;
+    height: 24px;
+    display: inline-flex;
+}
+
+.r-bts-option li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.r-bts-option button {
+    width: 100%;
+    
+    border: none;
+    background: none;
+    margin-left: 3px;
+}
+
+.r-bts-option .other-email .icon-user-plus,
+.r-bts-option .remove-email .icon-user-minus {
+    margin-right: 10px;
+}
+
+.r-bts-option .remove-email .icon-user-minus {
+    margin-left: 3px;
+    margin-right: 5px;
+}

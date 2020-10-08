@@ -41,7 +41,7 @@ export default function ServiceLogin() {
 
                     <form onSubmit={goToGmail}>
 
-                        <input placeholder="Senha"/>
+                        <input placeholder="Senha" type="password" required/>
                         <button className="button" type="submit">Fazer Login</button>
                         
                         <div className="form-footer">
