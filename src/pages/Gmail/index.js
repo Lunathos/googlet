@@ -91,7 +91,10 @@ export default function Gmail(){
                         <FaTh size={16}/>
                     </button>
 
-                    <button className="u-bts-icon">
+                    <button 
+                    
+                    onClick={() => {}}
+                    className="u-bts-icon">
                         <FaRegUserCircle size={35}/>
                     </button>
                 </div>
@@ -179,7 +182,6 @@ export default function Gmail(){
                         </SideNav.Nav>
                     </SideNav>
                 </div>
-
             </div>
 
             <div className="gmail-body">

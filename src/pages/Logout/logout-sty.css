@@ -18,6 +18,13 @@
     margin-bottom: 10px;
 }
 
+.name-account p {
+    margin-top: 10px;
+    line-height: 32;
+    font: 400 22px Roboto, sans-serif;
+    color: #202124;;
+}
+
 .user-image {
     margin-top: 5px; 
     color: orange;
@@ -29,6 +36,7 @@
     justify-content: space-between;
     display: inline-flex;
 }
+
 
 .l-user-account-email h3 {
     font: 500 16px Roboto, sans-serif;
@@ -53,7 +61,7 @@
 
 .l-user-account-bts {
     width: 350px;
-    height: 42px;
+    height: 54px;
 
     margin-top: 40px;
     margin-left: 30px; 
@@ -63,7 +71,6 @@
 .bts-option {
     width: 350px;
     margin-left: 30px;
-
 }
 
 .bts-option .other-email,
@@ -77,9 +84,14 @@
     display: inline-flex;
 }
 
+.bts-option ul {
+    padding-top: 10px;
+}
+
 .bts-option li {
+    height: 34px;
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-bottom: 1px solid #dcdce6;
 }
 
@@ -98,5 +110,5 @@
 
 .bts-option .remove-email .icon-user-minus {
     margin-left: 3px;
-    margin-right: 5px;
+    margin-right: 7px;
 }

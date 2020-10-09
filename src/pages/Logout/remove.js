@@ -11,10 +11,11 @@ import logoImg from '../../assets/logo.svg';
 
 export default function RemoveAccount() {
 
-    // const history = useHistory();
+     const history = useHistory();
 
     function DeleteUser() {
         alert('Sim, Remover?');
+        history.push('/');
     }    
 
     return (
@@ -25,7 +26,7 @@ export default function RemoveAccount() {
                             <img src={logoImg} alt="Google" />
                                 <div className="name-account">
                                     <p>Remover uma Conta</p>
-                                    <p>Remover desse navegador</p>
+                                    <span>Remover desse navegador</span>
                                 </div>
                         </div>
 
@@ -56,9 +57,7 @@ export default function RemoveAccount() {
                                 <li>
                                 <label htmlFor="other-email">
                                     <button className="other-email">
-                                        <FaRegUserCircle className="icon-user-plus" size={
-                                            20
-                                        }  color=" #777"/>
+                                        <FaRegUserCircle className="icon-user-plus" size={18}  color=" #777"/>
                                         Usar outra conta
                                     </button>
                                 </label>    
@@ -66,7 +65,9 @@ export default function RemoveAccount() {
                             </ul>
                             <div className="footer">
                                 <label htmlFor="concluido-bts">
-                                        <button className="concluido-bts"> Concluido</button>
+                                        <button onClick={() => {
+                                            history.push('/logout/RemoveAccount');
+                                        }} className="concluido-bts"> Concluído</button>
                                 </label>
                             </div>
                         </div>

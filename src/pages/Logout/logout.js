@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, useHistory} from 'react-router-dom';
+import { useHistory} from 'react-router-dom';
 
-import {FaRegUserCircle, FaUser , FaUserMinus} from 'react-icons/fa'
+import {FaRegUserCircle, FaUserMinus} from 'react-icons/fa'
 
 import './logout-sty.css';
 import './styles.css';
