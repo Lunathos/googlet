@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { useHistory } from 'react-router-dom';
 
 import {
     FaInbox, FaStar, FaClock,
@@ -22,29 +23,14 @@ import logoImg from '../../assets/gmail.png';
 import plusImg from '../../assets/plus-gmail.png';
 import './styles.css';
 
-
-// function Hide() {
-//     return (
-//         <div>
-//             <Gmail />
-//         </div>
-//     )
-// }
-//                                    <button 
-// type="button"
-// className="bts-clip"
-// onClick={() => {
-//     setAnex(!anex);
-// }}
-// >
-
-// <FaPaperclip size={17.5}/>
-// </button>
-
 export default function Gmail(){
 
     const [disp, setDisp] = useState(false);
     const [anex, setAnex] = useState(false);
+
+    const [opt, setOpt] = useState(false);
+
+    const history = useHistory();
 
     function onChange() {
         setAnex(!anex);
@@ -55,6 +41,19 @@ export default function Gmail(){
         setDisp(!disp);
         setAnex(!anex);
         event.preventDefault();
+    }
+
+
+    function handleShowOptions() {
+        setOpt(!opt);
+    }
+
+    function handlerLogout() {
+        history.push("/logout");
+    }
+
+    function addAccount() {
+        history.push("/logout/RemoveAccount");
     }
 
     return(
@@ -93,12 +92,49 @@ export default function Gmail(){
 
                     <button 
                     
-                    onClick={() => {}}
+                    onClick={handleShowOptions}
                     className="u-bts-icon">
                         <FaRegUserCircle size={35}/>
                     </button>
                 </div>
 
+                {opt && 
+
+                <div className="user-options">
+                    <div className="user-image-account">
+                        <div className="user-image-account-a">
+                            <FaRegUserCircle size={80}/>
+                        </div>
+
+                        <div className="user-account-b">
+                            <div className="user-name-options">TeT Informática</div>
+                            <div className="user-email-options">text@example.gmail.com</div>
+                            <div className="user-email-options">
+                                <label>
+                                    <button>Gerenciar sua Conta do Google</button>
+                                </label>
+                            </div>                            
+                        </div>
+
+                        <label htmlFor="user-add-email">
+                            <button onClick={addAccount} className="user-add-email">
+                                <div className="user-account-c">
+                                    <FaRegUserCircle className="user-icon-email" size={20}/>
+                                        Adicionar outra conta   
+                                </div>
+                            </button>
+                        </label> 
+
+                        <div className="user-footer-options">
+                            <label htmlFor="user-exit">
+                                <button onClick={handlerLogout} className="user-exit">
+                                    Sair
+                                </button>
+                            </label>
+                        </div>  
+                    </div>
+                </div>
+                }
                 
 
                 <div className="google-left-navbar">

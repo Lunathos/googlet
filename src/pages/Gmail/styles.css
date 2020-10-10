@@ -216,12 +216,128 @@ strong {
     padding-left: 85px;
 }
 
-/* .gmail-body-container .bts-mail {
+.user-options {
+    width: 354px;
+    height: 400px;
+
+    margin-left: 12;
+
+    position: absolute;
+    top: 62px;
+    right: 8px;
+
+    display: block;
+    background: #fff;
+    border: 1px solid #e2e8f3;
+    border-radius: 10px;
+    border-color: rgba(0,0,0,.2);
+    color: #000;
+}
+
+.user-image-account {
+    width: 288px;
+    height: 190px;
+    margin: 20px 33px;
+}
+
+.user-image-account-a {
+    margin-left: 101px;
+    margin-bottom: 10px;
+    position: relative;
+    
+    width: 86;
+    height: 86;
+}
+.user-account-b {
+    width: 288px;
+    height: 94px;
+}
+.user-name-options {
+    font: 500 16px Roboto, sans-serif;
+}
+
+.user-email-options {
+    font: 400 14px Roboto, sans-serif;
+}
+
+.user-email-options button {
+    width: 254px;
+    height: 34px;
+    background: none;
+
+    margin-top: 10px;
+    padding: 8px 16px;
+
+    text-align: center;
+    color: #3c4043;
+    
+    border: 1px solid #dadce0;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+}
+
+.user-email-options button {
+    font: 500 14px Roboto, sans-serif;
+}
+
+.user-email-options,
+.user-name-options {
+    text-align: center;
+    letter-spacing: normal;
+}
+
+.user-account-c {
+    margin-left: -33px;
+    padding: 14px 71px;
+    width: 352px;
+    height: 52;
+    background: #fff;
+
+    border-top: 1px solid #dadce0;
     
 }
 
-.gmail-body-container .bts-mail {
-     */
+.user-add-email {
+    width: 288px;
+
+    text-align: left;
+    border: none;
+    background: none;
+}
+
+.user-icon-email {
+    margin-right: 10px;
+    margin-bottom: -4px;
+}
+
+.user-footer-options {
+    
+    margin-left: -33px;
+
+    width: 352px;
+    height: 72px;
+    text-align: center;
+
+    background: #fff;
+    border-top: 1px solid #dcdce6;
+    border-bottom: 1px solid #dcdce6;
+}
+
+.user-exit {
+    width: 88px;
+    height: 38px;
+
+    background: #fff;
+
+    border: 1px solid #dadce0;
+
+    margin: 16px;
+   
+    padding: 10px 24px;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .escrever-mail-box {
     width: 480px;
