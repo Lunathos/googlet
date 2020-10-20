@@ -36,7 +36,7 @@ export default function RegisterInfo(){
 
                     <div className="input-optI-group">
                         <select>
-                            <option value={"BR"} disabled hidden></option>
+                            <option value={"BR"} disabled selected hidden></option>
                         </select>
 
                         <input type="number" placeholder="Número de telefone (opcional)" />

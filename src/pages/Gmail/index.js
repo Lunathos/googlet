@@ -7,7 +7,7 @@ import {
     FaTrash, FaSearch, FaQuestionCircle, FaCog, FaTh,
     FaRedo, FaCaretDown, FaEllipsisV, FaLink,
     FaSmile , FaGoogleDrive, FaImage, FaLock,
-    FaPenAlt, FaRegUserCircle
+    FaPenAlt, FaRegUserCircle, FaPaperclip
 } from 'react-icons/fa';
 
 import { FiSquare } from 'react-icons/fi';
@@ -107,8 +107,8 @@ export default function Gmail(){
                         </div>
 
                         <div className="user-account-b">
-                            <div className="user-name-options">TeT Informática</div>
-                            <div className="user-email-options">text@example.gmail.com</div>
+                            <div className="user-name-options">TeT Aluno</div>
+                            <div className="user-email-options">tetaluno@gmail.com</div>
                             <div className="user-email-options">
                                 <label>
                                     <button>Gerenciar sua Conta do Google</button>
@@ -160,7 +160,15 @@ export default function Gmail(){
                                         <img src={plusImg} alt="Escrever"/>
                                     </button>
                                 </NavIcon>
-                                    <NavText>Escrever</NavText>
+                                    <NavText> 
+                                    <button 
+                                        type="button"
+                                        className="bts-write"
+                                        onClick={() => {
+                                            setDisp(!disp);
+                                        }}
+                                    >Escrever</button>
+                                    </NavText>
                             </NavItem>
 
 
@@ -253,11 +261,17 @@ export default function Gmail(){
                                 
                                 
                                     <button className="bts-mail">
-                                        <strong className="title-mail">Modelo de Currículo</strong>
-                                
-                                        <strong className="desc-mail">Gmail simulador</strong>
+                                        <div className="title-mail">
+                                            <strong >Modelo de Currículo</strong>
+                                        </div>
 
-                                        <strong className="date-mail">23 set</strong>
+                                        <div  className="desc-mail">
+                                            <strong>Gmail simulador</strong>
+                                        </div>
+
+                                        <div className="date-mail">
+                                            <strong >23 set</strong>
+                                        </div>
                                     </button>
                                 </div>
 
@@ -307,7 +321,7 @@ export default function Gmail(){
                                         type="button"
                                         onClick={onChange}
                                         className="bts-link">
-                                        <FaLink className="bts-link" size={17.5} />
+                                        <FaPaperclip className="bts-link" size={17.5} />
                                     </button>
 
                                     <button 

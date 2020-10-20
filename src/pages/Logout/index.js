@@ -33,7 +33,7 @@ export default function Logout() {
                                 <div className="user-account">
                                     <FaRegUserCircle size={26} />
                                     <div className="user-account-email">
-                                        <p>text.example@gmail.com</p>
+                                        <p>tetaluno@gmail.com</p>
                                         <FaCaretDown className="user-acc-caret" size={15} />
                                     </div>
                                 </div>

@@ -14,7 +14,7 @@ export default function RemoveAccount() {
      const history = useHistory();
 
     function DeleteUser() {
-        alert('Sim, Remover?');
+        alert("Sim, Remover?")
         history.push('/');
     }    
 
@@ -40,7 +40,7 @@ export default function RemoveAccount() {
                                     <div className="l-user-account-email">
                                         <h3>TeT Aluno</h3>                                        
                                         <div className="l-name-account-email">
-                                            <p>text.example@gmail.com</p>
+                                            <p>tetaluno@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className="desconect-email">

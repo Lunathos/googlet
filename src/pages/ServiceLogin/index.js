@@ -35,7 +35,7 @@ export default function ServiceLogin() {
 
                         <div className="user-info">
                             <strong>TeT Aluno</strong>
-                            <p>text.example@gmail.com</p>
+                            <p>tetaluno@gmail.com</p>
                         </div>
                     </div>
 

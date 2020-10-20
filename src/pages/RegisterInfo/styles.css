@@ -51,7 +51,16 @@
 {
     width: 375px;
     height: 36px;
+    padding: 10px;
     margin-top: 16px;
+}
+
+.reginfo-container .content .birthday-group input {
+    padding: 7px;
+}
+
+.reginfo-container .content .input-optI-group input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .reginfo-container .content .input-optI-group input{
@@ -78,7 +87,7 @@
 .reginfo-container .content .input-optII-group p,
 .reginfo-container .content .birthday-group p
 {
-    font: 300 13px Roboto;
+    font: 300 13px Roboto, sans-serif;
     margin-top: 4px;
     margin-bottom: 15px;
 }

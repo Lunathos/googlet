@@ -34,6 +34,10 @@
     padding-left: 20px;
 }
 
+.login-container section.form form input {
+    padding: 20px;
+}
+
 
 .login-container section.form form h1 {
     margin-bottom: 15px;
@@ -41,11 +45,12 @@
 }
 
 .login-container section.form form h3 {
+    width: 370px;
+
+    text-align: center;
+    
     margin-bottom: 25px;
-    margin-left: 142px;
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 14px;
+    font: 300 14px Roboto, sans-serif;
 }
 
 .login-container section.form form h4{
@@ -54,8 +59,8 @@
 }
 
 .login-container section.form form h4 a{
-    font-family: Roboto;
-    font-weight: 500;
+    
+    font: 700 12px Roboto, sans-serif;
     color: #1A73E8;
 }
 

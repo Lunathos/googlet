@@ -24,15 +24,16 @@
 }
 
 .service-container .form-image .user-info {
-    padding-left: 145px;
     width: 100%;
-    width: 500px;
+    max-width: 500px;
+    
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 
 .service-container .form-image .user-info strong {
-    padding-left: 35px;
-    
     font: 700 20px Roboto, sans-serif;
 }
 
@@ -51,6 +52,8 @@
     width: 100%;
     max-width: 320px;
     margin-left: 65px;
+
+    padding: 20px;
 }
 
 .service-container section.form form {
@@ -64,6 +67,10 @@
     width: 100%;
     max-width: 320px;
     margin-left: 65px;
+}
+
+.service-container .button {
+    font-family: Roboto, sans-serif;
 }
 
 .service-container section.form .form-footer button {
@@ -104,8 +111,7 @@
 
 
 .service-container section.form form h4 a{
-    font-family: Roboto;
-    font-weight: 500;
+    font: 700 13px Roboto, sans-serif;
     color: #1A73E8;
 }
 
@@ -125,7 +131,7 @@
 }
 
 a:link, a:visited {
-    font: 700 14px Archivo;
+    font: 700 14px Archivo, sans-serif;
     color: #1A73E8;
     text-decoration: none;
 }

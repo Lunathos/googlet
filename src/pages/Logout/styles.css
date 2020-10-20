@@ -89,6 +89,7 @@
      width: 100%;
      max-width: 385px;
      margin-left: 25px;
+     padding: 20px;
  }
 
  .logout-container .form-header {
@@ -103,10 +104,8 @@
  
  
  .logout-container section.form form h4 a{
-     font-family: Roboto;
-     font-weight: 500;
+     font: 400 12px Roboto, sans-serif;
      color: #1A73E8;
-   
  }
  
 .l-form-footer {
@@ -131,7 +130,7 @@
 
 
  a:link, a:visited {
-     font: 700 14px Archivo;
+     font: 700 14px Archivo, sans-serif;
      color: #1A73E8;
      text-decoration: none;
  }
