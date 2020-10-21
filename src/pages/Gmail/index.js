@@ -262,7 +262,7 @@ export default function Gmail(){
                                 
                                     <button className="bts-mail">
                                         <div className="title-mail">
-                                            <strong >Modelo de Currículo</strong>
+                                            <b >Modelo de Currículo</b>
                                         </div>
 
                                         <div  className="desc-mail">
