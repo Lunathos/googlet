@@ -10,6 +10,7 @@ import ServiceLogin from './pages/ServiceLogin';
 import Register from './pages/Register';
 import RegisterInfo from './pages/RegisterInfo';
 import Gmail from './pages/Gmail';
+import Read from './pages/Gmail/read';
 
 export default function Routes() {
     return (
@@ -22,7 +23,8 @@ export default function Routes() {
                 <Route path="/ServiceLogin" component={ServiceLogin} />
                 <Route path="/register" component={Register} />
                 <Route path="/registerinfo" component={RegisterInfo} />
-                <Route path="/gmail" component={Gmail} />
+                <Route path="/gmail" exact component={Gmail} />
+                <Route path="/gmail/read" component={Read} />
             </Switch>        
         </BrowserRouter>
     )

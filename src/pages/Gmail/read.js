@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
-import { ContextMenu, MenuItem, ContextMenuTrigger } from 'react-contextmenu'
 import { useHistory } from 'react-router-dom';
 
 import {
     FaInbox, FaStar, FaClock,
     FaPaperPlane, FaStickyNote, FaExclamationCircle,
     FaTrash, FaSearch, FaQuestionCircle, FaCog, FaTh,
-    FaRedo, FaCaretDown, FaEllipsisV, FaSmile , FaGoogleDrive, FaImage, FaLock,
-    FaPenAlt, FaRegUserCircle, FaPaperclip, FaReply, FaLongArrowAltRight
+    FaCaretDown, FaEllipsisV, FaSmile , FaGoogleDrive, FaImage, FaLock,
+    FaPenAlt, FaRegUserCircle, FaPaperclip, FaFolderPlus, FaArrowLeft,
+    FaEnvelopeOpenText, FaStopwatch, FaFolder, FaLocationArrow, FaPrint,
+    FaExpandArrowsAlt, FaReply, FaArrowRight
 } from 'react-icons/fa';
-
-import { FiSquare } from 'react-icons/fi';
 
 import SideNav, {
     NavItem, NavIcon, NavText
@@ -19,6 +18,8 @@ import SideNav, {
 import './react-sidenav.css';
 import './react-contextmenu.css'
 
+import './read.css';
+import anexoImg from '../../assets/docs-anexo.png';
 import logoImg from '../../assets/gmail.png';
 import plusImg from '../../assets/plus-gmail.png';
 import './styles.css';
@@ -31,11 +32,9 @@ export default function Gmail(){
 
     const history = useHistory();
 
-    const ID = 'ID'
-    const handleClick = (event, data) => {
-        console.log('clicked',{event, data})
+    function goBack() {
+        history.push("/gmail");
     }
-
 
     function onChange() {
         setAnex(!anex);
@@ -55,10 +54,6 @@ export default function Gmail(){
 
     function handlerLogout() {
         history.push("/logout");
-    }
-
-    function goToEmail() {
-        history.push("/gmail/read");
     }
 
     function addAccount() {
@@ -238,112 +233,108 @@ export default function Gmail(){
             </div>
 
             <div className="gmail-body">
-
                 <div className="gmail-body-header">
-                    <button className="bts-select">
-                        <FiSquare size={17.5}/>
-                        <FaCaretDown size={17.5}/>
+                    <button className="bts-back" onClick={goBack}>
+                         <FaArrowLeft size={15}/>                       
+                    </button>
+                    <button className="bts-archive">
+                        <FaFolderPlus size={17.5}/>
                     </button>                    
-                    <button className="bts-redo">
-                            <FaRedo size={17.5}/>
+                    <button className="bts-spam">
+                            <FaExclamationCircle size={17.5}/>
+                    </button>
+                    <button className="bts-trash">
+                            <FaTrash size={17.5}/>
+                    </button>
+
+                    <button className="bts-noread">
+                            <FaEnvelopeOpenText size={17.5}/>
+                    </button>
+                    <button className="bts-suspend">
+                            <FaClock size={17.5}/>
+                    </button>
+                    <button className="bts-addTask">
+                            <FaStopwatch size={17.5}/>
+                    </button>
+                    <button className="bts-moveTo">
+                            <FaFolder size={17.5}/>
+                    </button>
+                    <button className="bts-marc">
+                            <FaLocationArrow size={17.5}/>
                     </button>
 
                     <button className="bts-grid">
                         <FaEllipsisV size={17.5}/>
                     </button>
                     <div className="gmail-b-header"/>
-
                 </div>
                 
                 <div className="gmail-body-container">
-                <ContextMenuTrigger id={ID}>
-                    <div className="gmail-content">
-                                <div className="email-content">
-                                    <button className="bts-select-mail">
-                                        <FiSquare size={17.5}/>
-                                    </button>
-                                    <button className="bts-star-mail" onClick={() => {}} type="button">
-                                        <FaStar size={17.5}/>
-                                    </button>
-                                
-                                    <button className="bts-mail" onClick={goToEmail}>
-                                        <div className="title-mail">
-                                            <b >Modelo de Currículo</b>
-                                        </div>
-                                        <div  className="desc-mail">
-                                            <strong>Gmail simulador</strong>
-                                        </div>
-                                        <div className="date-mail">
-                                            <strong >23 set</strong>
-                                        </div>
-                                    </button>
-                                </div>
+                    <div className="gmail-message-header">
+                        <div className="title-mail">
+                            <h3>Modelo Currículo</h3>
+                        </div>
+                    </div>
+                    <div className="gmail-icons-header">
+                        <button className="bts-print">
+                            <FaPrint size={17}/>
+                        </button>
+                        <button className="bts-expand">
+                            <FaExpandArrowsAlt size={17}/>
+                        </button>
+                    </div>                   
+                    <div className="gmail-description">
+                        <div className="gmail-img">
+                            <FaRegUserCircle size={30}/>
+                        </div>
+                        <div className="gmail-user-description">
+                            TeT Cursos Profissionalizantes <label>(tetaluno@gmail.com)</label>
+                        <div className="bts-user">
+                            <button className="bts-star">
+                                        <FaStar size={16}/>
+                            </button>
+                            <button className="bts-reply">
+                                        <FaReply size={16}/>
+                            </button>
+                            <button className="bts-grid-mail">
+                                        <FaEllipsisV size={16}/>
+                            </button>
+                        </div>
+                        </div>
+    
+                        <div className="gmail-user-to">
+                            para mim <FaCaretDown size={12}/>
+                        </div>
+                    </div>  
+                
+                    <div className="gmail-body-message">
+                        Esse é um exemplo de e-mail!
+                        Abaixo temos os arquivos anexos.
+                    </div>
+                    <div className="gmail-anexos">
+                        <div className="qtd-anexos">1 anexo</div>
+
+                        <button className="anexos-config">
+                        <img src={anexoImg} alt="Anexo"/>
+                        
+                        <span>Modelo Currículo.docs</span>
+                        </button>
                     </div>
 
-                </ContextMenuTrigger>
-                <ContextMenu id={ID}>
-                    <MenuItem
-                        data={{action: 'reply'}}
-                        onClick={handleClick}
-                    ><FaReply size={13}/> Responder</MenuItem>
-                    <MenuItem
-                        data={{action: 'foward'}}
-                        onClick={handleClick}
-                    ><FaLongArrowAltRight size={14}/> Encaminhar
-                    </MenuItem>
-                    <MenuItem
-                        data={{action: 'filter'}}
-                        onClick={handleClick}
-                    >Filtrar mensagens semelhantes
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'print'}}
-                        onClick={handleClick}
-                    >Imprimir
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'delete'}}
-                        onClick={handleClick}
-                    >Excluir esta mensagem
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'block'}}
-                        onClick={handleClick}
-                    >Bloquear
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'spam'}}
-                        onClick={handleClick}
-                    >Denunciar spam
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'phishing'}}
-                        onClick={handleClick}
-                    >Denunciar phishing
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'original'}}
-                        onClick={handleClick}
-                    >Mostrar original
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'translate'}}
-                        onClick={handleClick}
-                    >Traduzir mensagem
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'download'}}
-                        onClick={handleClick}
-                    >Fazer o download da mensagem
-                    </MenuItem>                        
-                    <MenuItem
-                        data={{action: 'noread'}}
-                        onClick={handleClick}
-                    >Marcar como não lida
-                    </MenuItem>                        
-                </ContextMenu>
-
-            
+                    <div className="gmail-options">
+                        <>
+                        <button className="button"
+                                type="button">
+                            <FaReply size={16}/> Responder
+                        </button>
+                        </>
+                        <>
+                        <button className="button"
+                        type="button">
+                            <FaArrowRight size={16}/> Encaminhar
+                        </button>
+                        </>
+                    </div>
                 </div>
                     
                         {disp &&

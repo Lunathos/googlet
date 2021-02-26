@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+     /*Muda a cor do Container Principal* Se as outras opções não tiverem backgroud vão fica iguais ao principal*/
 }
 
 .gmail-header {
@@ -89,6 +90,7 @@
     margin-bottom: -18px;
 }
 
+/*BODY para mudar a cor*/
 .gmail-container .gmail-body {
     width: 950px;
     height: 100vh;
@@ -98,7 +100,7 @@
     flex-direction: column;
     display: flex;
 
-    background: #fff;
+    /* background: tomato; */
 }
 
 .gmail-container .gmail-body-header {
@@ -136,7 +138,7 @@
     margin-left: 35px;
 }
 
-
+/*Comentário para Localizar a BOX dos EMAILS*/
 .gmail-container .gmail-body-container {
     width: 100%;
     height: 100vh;
@@ -442,10 +444,24 @@ strong {
     color: #404040;
 }
 
-.bts-select, .bts-redo, .bts-grid, .bts-select-mail,
+.bts-select, .bts-back, .bts-archive, .bts-spam,.bts-redo, .bts-grid, .bts-select-mail,
 .bts-clip, .bts-link, .bts-smile,.bts-drive,
-.bts-image,.bts-lock, .bts-pen, .bts-eli, .bts-trash {
+.bts-image,.bts-lock, .bts-pen, .bts-eli, .bts-trash,
+.bts-noread, .bts-suspend, .bts-addTask, .bts-moveTo, .bts-marc {
     color: #979696;
+}
+
+.divider {
+    background: blue;
+}
+
+.bts-back{
+    margin-right: 10px;
+}
+
+.bts-archive, .bts-spam, .bts-trash, .bts-noread,
+.bts-suspend, .bts-addTask, .bts-moveTo, .bts-marc {
+    margin-left: 15px;
 }
 
 .bts-select-mail, .bts-star-mail {
